@@ -15,20 +15,22 @@ public class ejercicio04 {
     int numeroHoras;
     numeroHoras = Integer.parseInt ( linea );
     if ( numeroHoras <= 40) {
-    System.out.println( "A razón de 12 € las 40 primeras horas ud. cobrará:" );
+    System.out.println( "A razón de 12 €/h, las 40 primeras horas, ud. cobrará:" );
     System.out.println( "12 € * " + numeroHoras + " h. = " + numeroHoras * 12 + (" €"));
-    System.out.println( "El dinero por " + numeroHoras + " h. son " + numeroHoras * 12 + " €");
+    System.out.print( "El dinero por " + numeroHoras + " h. de trabajo son: ");
+    System.out.println(numeroHoras * 12 + " €");
   }else{
     }if ( numeroHoras >= 41){
     int x = 12 * 40;
     int h = (numeroHoras - 40);
     int y = (h * 16);
     int j = ((numeroHoras - 40) * 16 + 480);
-    System.out.println( "A razón de 12 € las 40 primeras horas y 16 € las restantes ud. cobrará:" );
+    System.out.print( "A razón de 12 €/h, las 40 primeras horas," );
+    System.out.println(" y 16 €/h las restantes, ud. cobrará:");
     System.out.println( "12 € * 40 h. = " + x + "  €" );
     System.out.println( "16 € * " + h + " h. =  " + y + " €" );
     System.out.println( x + " € + " + y + " € = " + j + " €" );
-    System.out.println( "El dinero por " + numeroHoras + " h. son " + j + " €" );
+    System.out.println( "El dinero por " + numeroHoras + " h. de trabajo son: " + j + " €" );
   }else{
    }
   }
