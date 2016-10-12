@@ -20,6 +20,7 @@ public class ejercicio12 {
     mediaTrimestre = Double.parseDouble ( linea );
     double notaSegundo;
     notaSegundo = ((mediaTrimestre - (notaPrimero * 0.4)) / 0.6);
-    System.out.println("Si desea sacar un " + mediaTrimestre + " en el trimestre, en el segundo examen deberia sacar "  + notaSegundo);
+    System.out.print("Si desea sacar un " + mediaTrimestre + " en el trimestre,");
+    System.out.printf(" en el segundo examen deberia sacar %.2f", notaSegundo);    
   }
 }
