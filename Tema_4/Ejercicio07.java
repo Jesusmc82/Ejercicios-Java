@@ -21,10 +21,17 @@ public class Ejercicio07 {
     linea = System.console().readLine();
     double notaExamen3;
     notaExamen3 = Double.parseDouble ( linea );
-        
     
     double notaMedia;
-    notaMedia = (notaExamen1 + notaExamen2 + notaExamen3) / 3;
-    System.out.printf("La nota media que va a obtener es un %.2f", notaMedia);
+    
+    if ((notaExamen1 < 0 ) || (notaExamen2 < 0 ) || (notaExamen3 < 0 )){
+      System.out.printf("Las notas deben estar entre 0 - 10, para poder hacer la media\n");
+    
+    } else if (( notaExamen1 > 10 ) || ( notaExamen2 > 10 ) || ( notaExamen3 > 10 )){    
+    System.out.printf("Las notas deben estar entre 0 - 10, para poder hacer la media\n");
+    } else if ((notaExamen1 > 0 ) || (notaExamen2 > 0 ) || (notaExamen3 > 0 )){      
+      notaMedia = (notaExamen1 + notaExamen2 + notaExamen3) / 3;
+      System.out.printf("La nota media que va a obtener es un %.2f", notaMedia);
+    }
   }
 }

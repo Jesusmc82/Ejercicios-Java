@@ -19,15 +19,7 @@ public class ejercicio03 {
   
     int opcion = Integer.parseInt(System.console().readLine());
 
-    int Lunes;
-    int Martes;
-    int Miercoles;
-    int Jueves;
-    int Viernes;
-    int Sabado;
-    int Domingo;
-    
-    switch (opcion) {
+   switch (opcion) {
       case 1:
         System.out.println("El día de la semana correspondiente es: Lunes");
         break;
