@@ -5,7 +5,7 @@
  * @author Jesus Martin Castro
  */
 
-public class Ejercicio01 {
+public class ejercicio01 {
   public static void main(String[] args) {
     System.out.print("¿Qué día de la semana desea saber? ");
     String respuesta = System.console().readLine();
