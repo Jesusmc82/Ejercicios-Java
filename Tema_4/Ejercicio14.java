@@ -4,7 +4,7 @@
  * es par y/o divisible entre 5.
  *
  * @author Jesus Martin Castro
-  */
+ */
  public class Ejercicio14 {
 
    public static void main(String[] args) {

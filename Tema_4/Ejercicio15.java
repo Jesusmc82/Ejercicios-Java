@@ -6,6 +6,7 @@
  * el vértice de la pirámide está apuntando hacia arriba, hacia abajo, hacia la
  * izquierda o hacia la derecha.
  *
+ * @author Jesus Martin Castro
  */
  
 public class Ejercicio15 {
