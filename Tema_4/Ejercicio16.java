@@ -14,8 +14,8 @@ public class Ejercicio16 {
   public static void main(String[] args) {
   String linea;
    System.out.println("Vamos a definir si tu pareja te es infiel o no:");
-   System.out.println("Contesta con verdadero (v) o falso(f)");    
-   System.out.println("");
+   System.out.println("Contesta con verdadero (v) o falso(f)");
+   System.out.println("Por favor pulse [INTRO] para continuar");    
    linea = System.console().readLine();
     
      int puntos = 0;
@@ -29,7 +29,7 @@ public class Ejercicio16 {
     } else if (respuesta1.equals("F")) {
       puntos = puntos + 0;
     } else {
-      System.out.println("Por favor conteste unicamente con verdaero (v) o falso (f)");
+      System.out.println("Por favor conteste unicamente con verdadero (v) o falso (f)");
     }
 
    System.out.println("");
@@ -42,7 +42,7 @@ public class Ejercicio16 {
     } else if (respuesta2.equals("F")) {
       puntos = puntos + 0;
     } else {
-      System.out.println("Por favor conteste unicamente con verdaero (v) o falso (f)");
+      System.out.println("Por favor conteste unicamente con verdadero (v) o falso (f)");
     }      
     
     System.out.println("");
@@ -55,7 +55,7 @@ public class Ejercicio16 {
     } else if (respuesta3.equals("F")) {
       puntos = puntos + 0;
     } else {
-      System.out.println("Por favor conteste unicamente con verdaero (v) o falso (f)");
+      System.out.println("Por favor conteste unicamente con verdadero (v) o falso (f)");
     }
     
     System.out.println("");
@@ -69,7 +69,7 @@ public class Ejercicio16 {
     } else if (respuesta4.equals("F")) {
       puntos = puntos + 0;
     } else {
-      System.out.println("Por favor conteste unicamente con verdaero (v) o falso (f)");
+      System.out.println("Por favor conteste unicamente con verdadero (v) o falso (f)");
     }
      
     System.out.println(""); 
@@ -82,7 +82,7 @@ public class Ejercicio16 {
     } else if (respuesta5.equals("F")) {
       puntos = puntos + 0;
     } else {
-      System.out.println("Por favor conteste unicamente con verdaero (v) o falso (f)");
+      System.out.println("Por favor conteste unicamente con verdadero (v) o falso (f)");
     }
     
     System.out.println(""); 
@@ -95,7 +95,7 @@ public class Ejercicio16 {
     } else if (respuesta6.equals("F")) {
       puntos = puntos + 0;
     } else {
-      System.out.println("Por favor conteste unicamente con verdaero (v) o falso (f)");
+      System.out.println("Por favor conteste unicamente con verdadero (v) o falso (f)");
     }
     
     System.out.println("");   
@@ -108,7 +108,7 @@ public class Ejercicio16 {
     } else if (respuesta7.equals("F")) {
       puntos = puntos + 0;
     } else {
-      System.out.println("Por favor conteste unicamente con verdaero (v) o falso (f)");
+      System.out.println("Por favor conteste unicamente con verdadero (v) o falso (f)");
     }
      
     System.out.println("");   
@@ -121,7 +121,7 @@ public class Ejercicio16 {
     } else if (respuesta8.equals("F")) {
       puntos = puntos + 0;
     } else {
-      System.out.println("Por favor conteste unicamente con verdaero (v) o falso (f)");
+      System.out.println("Por favor conteste unicamente con verdadero (v) o falso (f)");
     }
                      
     System.out.println("");   
@@ -134,7 +134,7 @@ public class Ejercicio16 {
     } else if (respuesta9.equals("F")) {
       puntos = puntos + 0;
     } else {
-      System.out.println("Por favor conteste unicamente con verdaero (v) o falso (f)");
+      System.out.println("Por favor conteste unicamente con verdadero (v) o falso (f)");
     }
         
     System.out.println("");   
@@ -147,7 +147,7 @@ public class Ejercicio16 {
     } else if (respuesta10.equals("F")) {
       puntos = puntos + 0;
     } else {
-      System.out.println("Por favor conteste unicamente con verdaero (v) o falso (f)");
+      System.out.println("Por favor conteste unicamente con verdadero (v) o falso (f)");
     }
   
    System.out.println("");  
