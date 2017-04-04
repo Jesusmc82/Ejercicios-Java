@@ -1,38 +1,36 @@
- /**
-* Vamos a ampliar uno de los ejercicios de la relación anterior para considerar
-* las horas extras. Escribe un programa que calcule el salario semanal de un
-* trabajador teniendo en cuenta que las horas ordinarias (40 primeras horas de
-* trabajo) se pagan a 12 euros la hora. A partir de la hora 41, se pagan a 16
-* euros la hora.
-* 
-* @author Jesus Martin Castro
-*/
-
-public class ejercicio04 {
-  public static void main(String[] args) {
-   String linea;
-    System.out.print("Numero de horas que echó: ");
-    linea = System.console().readLine();
-    int numeroHoras;
-    numeroHoras = Integer.parseInt ( linea );
-    if ( numeroHoras <= 40) {
-    System.out.println( "A razón de 12 €/h, las 40 primeras horas, ud. cobrará:" );
-    System.out.println( "12 € * " + numeroHoras + " h. = " + numeroHoras * 12 + (" €"));
-    System.out.print( "El dinero por " + numeroHoras + " h. de trabajo son: ");
-    System.out.println(numeroHoras * 12 + " €");
-  }else{
-    }if ( numeroHoras >= 41){
-    int x = 12 * 40;
-    int h = (numeroHoras - 40);
-    int y = (h * 16);
-    int j = ((numeroHoras - 40) * 16 + 480);
-    System.out.print( "A razón de 12 €/h, las 40 primeras horas," );
-    System.out.println(" y 16 €/h las restantes, ud. cobrará:");
-    System.out.println( "12 € * 40 h. = " + x + "  €" );
-    System.out.println( "16 € * " + h + " h. =  " + y + " €" );
-    System.out.println( x + " € + " + y + " € = " + j + " €" );
-    System.out.println( "El dinero por " + numeroHoras + " h. de trabajo son: " + j + " €" );
-  }else{
+/**
+ * Vamos a ampliar uno de los ejercicios de la relación anterior para considerar
+ * las horas extras. Escribe un programa que calcule el salario semanal de un
+ * trabajador teniendo en cuenta que las horas ordinarias (40 primeras horas de
+ * trabajo) se pagan a 12 euros la hora. A partir de la hora 41, se pagan a 16
+ * euros la hora.
+ * 
+ * @author Jesús Martín Castro
+ */
+import java.util.Scanner;
+public class ejercicio04{
+  public static void main (String[] arg){
+     
+     Scanner n = new Scanner(System.in);
+     
+     System.out.print("Dígame el número de horas trabajadas esta semana");
+     System.out.print(" y le diré su sueldo\n");
+     System.out.print("(recuerde que cobrará a razón de 12 €/hora las 12 primeras horas ");
+     System.out.print("y a 16 €/hora las restantes)\n");
+     System.out.print("¿Cuántas horas tiene trabajadas?: ");
+     
+     int horas = Integer.parseInt(n.nextLine());
+    
+     
+     if((horas>=1)&&(horas<=40)){
+     double sueldo = horas * 12;
+     System.out.println("\nSu sueldo de esta semana será:");
+     System.out.println("   " + horas + " h. x 12 €/h. = " + sueldo + " €");
+    
+    }else if (horas>=41){
+     double sueldo = (horas - 40) * 16 + 480;
+     System.out.println("\nSu sueldo de esta semana será:");
+     System.out.println("(" + horas + " h. - 40 h.) x 16 €/h. + 480 € = " + sueldo + " €");
+    }
    }
-  }
 }

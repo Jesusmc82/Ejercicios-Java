@@ -6,20 +6,20 @@
  *
  * @author Jesus Martin Castro
  */
-
+import java.util.Scanner;
 public class ejercicio02 {
-  public static void main(String[] args) {
-    System.out.println("¿Qué hora es?");
-    String linea = System.console().readLine();
-    double n = Double.parseDouble( linea );
+  public static void main(String[] args) {   
+    System.out.print("Díga qué hora es ");
     
-    if (( n >= 6 ) && ( n <= 12 )) {
-      System.out.println("Buenos días");
-    } else if (( n >= 13) && ( n <= 20 )) {
-      System.out.println("Buenas tardes");
-    } else {
-      if ((( n >= 21 || n <= 24 )) && (( n >= 0 || n <= 5 )))
-      System.out.println("Buenas noches");
+    String linea = System.console().readLine();
+    int n = Integer.parseInt(linea);
+    
+    if ((n>=6)&&(n<=12)){
+      System.out.print("¡¡Buenos días!!");
+    } else if ((n>=13)&&(n<=20)){
+      System.out.print("¡¡Buenas tardes!!");
+    } else if ((n>=21 || n<=24) && (n>=1 || n<=5)){
+      System.out.print("¡¡Buenas noches!!");
     }
-  }
+ }
 }

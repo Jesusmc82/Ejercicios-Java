@@ -4,52 +4,43 @@
  *
  * @author Jesus Martin Castro
  */
-
+import java.util.Scanner;
 public class ejercicio03 {
-  public static void main(String[] args) {
-  
-    System.out.println(" Escribe un número para saber el día de la semana correspondiente");
-    System.out.print(" 1,");
-    System.out.print(" 2,");
-    System.out.print(" 3,");
-    System.out.print(" 4,");
-    System.out.print(" 5,");
-    System.out.print(" 6,");
-    System.out.println(" 7");
-  
-    int opcion = Integer.parseInt(System.console().readLine());
-
-   switch (opcion) {
-      case 1:
-        System.out.println("El día de la semana correspondiente es: Lunes");
-        break;
+  public static void main(String[] args) {   
+       
+    System.out.print("¿Qué día de la semana es?: ");
     
-      case 2:
-        System.out.println("El día de la semana correspondiente es: Martes");
-        break;
+    Scanner n =new Scanner(System.in);
+    String dia = n.nextLine().toLowerCase();
     
-      case 3:
-        System.out.println("El día de la semana correspondiente es: Miercoles");
+    String semana;
+    
+    switch (dia) {
+      case "1":
+        semana = "Lunes";
         break;
-        
-      case 4:
-        System.out.println("El día de la semana correspondiente es: Jueves");
-        break;        
-        
-      case 5:
-        System.out.println("El día de la semana correspondiente es: Viernes");
-        break;        
-      
-      case 6:
-        System.out.println("El día de la semana correspondiente es: Sábado");
-        break;        
-      
-      case 7:
-        System.out.println("El día de la semana correspondiente es: Domingo");
+      case "2":
+        semana = "Martes";
         break;
-        
+      case "3":
+        semana = "Miércoles";
+        break;
+      case "4":
+        semana = "Jueves";
+        break;
+      case "5":
+        semana = "Viernes";
+        break;
+      case "6":
+        semana = "Sábado";
+        break;
+      case "7":
+        semana = "Domingo";
+        break;
       default:
-        System.out.print("\nEse número no corresponde a ningún día de la semana.");
+        semana = "no existe";
     }
+
+    System.out.println("El día " + dia + " corresponde al: " + semana);
   }
 }

@@ -4,24 +4,38 @@
  *
  * @author Jesus Martin Castro
  */
-
+import java.util.Scanner;
 public class ejercicio01 {
-  public static void main(String[] args) {
-    System.out.print("¿Qué día de la semana desea saber? ");
-    String respuesta = System.console().readLine();
-
-    if (respuesta.equals("Lunes")) {
-      System.out.println("El Lunes a primera hora toca Sistemas Informaticos");
-    } else if (respuesta.equals("Martes")) {
-      System.out.println("El Martes a primera hora toca Programación");
-    } else if (respuesta.equals("Miercoles")) {
-      System.out.println("El Miercoles a primera hora toca Programación");
-    } else if (respuesta.equals("Jueves")) {
-      System.out.println("El Jueves a primera hora toca Base de Datos");
-    } else if (respuesta.equals("Viernes")) {
-      System.out.println("El Viernes a primera hora toca Lenguaje de Marcas");
-    } else {
-      System.out.println("Los Sábados y Domingos no hay clases");
+  public static void main(String[] args) {   
+       
+    System.out.print("¿Qué día quiere saber la asignatura que toca a primera hora?: ");
+    
+    Scanner n =new Scanner(System.in);
+    String dia = n.nextLine().toLowerCase();
+    
+    String asignatura;
+    
+    switch (dia) {
+      case "lunes":
+        asignatura = "Sistemas Informaticos";
+        break;
+      case "martes":
+        asignatura = "Programación";
+        break;
+      case "miercoles":
+        asignatura = "Programación";
+        break;
+      case "jueves":
+        asignatura = "Base de Datos";
+        break;
+      case "viernes":
+        asignatura = "Lenguaje de Marcas";
+        break;
+      
+      default:
+        asignatura = "Ese día no hay clases";
     }
+
+    System.out.println("La asignatura para el " + dia + " es: " + asignatura);
   }
 }

@@ -1,24 +1,24 @@
 /**
-* Escribe un programa que calcule el área de un triangulo.
-* 
-* @author Jesus Martin Castro
-*/
-
+ *Escribe un programa que calcule el área de un triángulo.
+ * 
+ * @author Jesús Martín Castro
+ */
 import java.util.Scanner;
-
-public class ejercicio06 {
-  public static void main(String[] args) {
-   String linea;
-    System.out.print("¿Cuál es la base del triangulo?: ");
-    linea = System.console().readLine();
-    double base;
-    base = Double.parseDouble ( linea );
-    System.out.print("¿Cuál es la altura?: ");
-    linea = System.console().readLine();
-    double altura;
-    altura = Double.parseDouble ( linea );
-    double area;
-    area = (double) ((base * altura) / 2);
-    System.out.println("El area de tu triangulo es "  + area);    
+public class ejercicio06{
+  public static void main (String[] arg){
+     
+     Scanner n = new Scanner(System.in);
+     
+     System.out.println("Calculemos el área del triangulo");
+     System.out.print("\n¿Cuál es el tamaño de su base?: ");
+      int base = Integer.parseInt(n.nextLine());
+     System.out.print("¿Cuál es el tamaño de su altura?: ");
+      int altura = Integer.parseInt(n.nextLine());
+ 
+      double area = (double) base * altura / 2;
+     
+     
+        System.out.println("\nEl área de este triangulo es:\n");
+        System.out.println("   (" + base + " x " + altura + ") / 2 = "+ area + " cm²");
   }
 }

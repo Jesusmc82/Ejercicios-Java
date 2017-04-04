@@ -1,21 +1,23 @@
 /**
-* Realiza un conversor de pesetas a euros. La cantidad de pesetas que se quiere
-* convertir debe ser introducida por teclado.
-* @author Jesus Martin Castro
-*/
-
+ * Realiza un conversor de pesetas a euros. La cantidad en pesetas que se quiere
+ * convertir deberá estar almacenada en una variable.
+ * 
+ * @author Jesús Martín Castro
+ */
 import java.util.Scanner;
-
-public class ejercicio03 {
-  public static void main(String[] args) {
-   String linea;
-    System.out.print("Introduce la cantidad de Pesetas: ");
-    linea = System.console().readLine();
-    int pesetas;
-    pesetas = Integer.parseInt ( linea );
-    double total;
-    total = (double)(pesetas / 166.386);
-    System.out.print("La cantidad de " + pesetas + " Pesetas");
-    System.out.printf(" son %3.2f Euros",  total);
-  }
+public class ejercicio03{
+  public static void main (String[] arg){
+     
+     Scanner n = new Scanner(System.in);
+     
+     System.out.println("Esto es un conversor de Pesetas (pts.) a Euros (€) ");
+     System.out.println("Introduzca la cantidad de Pesetas que desea convertir: ");
+     
+     int y = Integer.parseInt(n.nextLine());
+     double x = 166.386;
+     double h = y / x;
+     
+     System.out.print("La cantidad de " + y + " Pesetas (pts) en Euros que desea ");
+     System.out.printf("saber son: %.2f Euros", h);
+   }
 }

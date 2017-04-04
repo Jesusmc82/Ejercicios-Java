@@ -6,15 +6,14 @@
  * @author Jesús Martín Castro
  */
 import java.util.Scanner;
-public class ejercicio07{
+public class ejercicio06{
   public static void main (String[] arg){
      
      Scanner n = new Scanner(System.in);
      
-     System.out.println("Calculemos el resultado final de su factura");
-     System.out.print("Dígame la base imponible: ");
+     System.out.println("Calculemos el resultado final de una factura");
      
-     double baseImponible = Double.parseDouble(n.nextLine());
+     double baseImponible = 66;
      double ivaSuperreducido = baseImponible * 4 / 100;
      double ivaReducido = baseImponible * 10 / 100;
      double ivaGeneral = baseImponible * 21 / 100;
