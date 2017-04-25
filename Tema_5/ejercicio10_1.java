@@ -34,7 +34,7 @@ public class ejercicio10_1 {
   division--;
   sumando= sumando - numero;
   resultado= sumando/(double)division;
-    System.out.println("La suma de todos sus número es " +sumando+" y el divisor para hayar la media es " + division);
+    System.out.println("La suma de todos sus número es " +sumando+ " y el divisor para hayar la media es " + division);
     System.out.println("La media es: " + resultado);
   }
  }
