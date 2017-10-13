@@ -9,11 +9,16 @@
 public class Ejercicio12 {
     public static void main(String[] args) {
       
-      System.out.println("Diga cuántos Kb necesita pasar a Mb");
-        double kb = Double.parseDouble(System.console().readLine());
+      System.out.println("¿Quiere saber que nota debe sacar en su segundo examen para saber la nota que desea sacar en el trimestre?");
+      System.out.println("Dígame la nota del primer examen y la nota que desea sacar al final de curso.");
+      System.out.println("¿Qué nota sacó en el primer examen?");
+        double notaPrimerExamen = Double.parseDouble(System.console().readLine());
+      System.out.println("Ahora ponga a nota que desea sacar en el curso");
+        double notaFinCurso = Double.parseDouble(System.console().readLine());
+        double importanciaPrimerExamen = (notaPrimerExamen * 40) / 100;
+        double restanteNota =  notaFinCurso - importanciaPrimerExamen;
+        double notaSegundoExamen = (restanteNota * 100) / 60;
         
-        double mb = kb / 1024;
-        
-      System.out.println("Los " + kb + " Kb pasados a Mb suponen " + mb);
+      System.out.println("La nota que debe sacar en el segundo examen deberá ser: " + notaSegundoExamen);
     }
 }
