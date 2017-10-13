@@ -18,8 +18,7 @@ public class Ejercicio12 {
       System.out.println("Ahora ponga la nota que desea sacar en el trimestre");//solicitamos la nota que se desea sacar en el trimestre
         double notaFinTrimestre = Double.parseDouble(System.console().readLine());//variable para la nota del trimestre
       
-        double importanciaPrimerExamen = (notaPrimerExamen * 40) / 100;//aquí calculamos el 40% de importancia del primer examen
-        double restanteNota =  notaFinTrimestre - importanciaPrimerExamen;//restamos la nota fin de trimestre con la nota del primer examen para saber la nota restante del 60% del segundo examen
+        double restanteNota = notaFinTrimestre - ((notaPrimerExamen * 40) / 100);//aquí calculamos el 40% de importancia del primer examen y sacamos el resto de la nota para la nota del segundo examen
         double notaSegundoExamen = (restanteNota * 100) / 60;//dado el resultado de la resta anterior calculamos el total del segundo examen
         
       System.out.printf("La nota que debe sacar en el segundo examen deberá ser: %.2f", notaSegundoExamen);//mostramos el total de la nota que se ha de sacar en el segundo examen
