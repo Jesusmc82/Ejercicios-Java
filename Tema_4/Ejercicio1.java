@@ -6,7 +6,7 @@
 */
 public class Ejercicio1 {
     public static void main(String[] args) {
-      System.out.println("No sabes qué asignatura toca a primera hora, ¡¡yo te ayudaré!!");
+      System.out.print("No sabes qué asignatura toca a primera hora, ¡¡yo te ayudaré!!");
         String Linea= System.console().readLine();
       System.out.println("¿Qué día es hoy?");
         String diaSemana = System.console().readLine().toLowerCase();//pasa la variable toda a minúscula, si ponemos toUpperCase pasaría todo el texto introducido a mayúsculas.

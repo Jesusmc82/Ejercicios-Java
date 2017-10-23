@@ -6,7 +6,7 @@
 */
 public class Ejercicio5 {
     public static void main(String[] args) {
-      System.out.println("Vamos a resolver la siguien ecuación ax + b = 0 ");
+      System.out.print("Vamos a resolver la siguien ecuación ax + b = 0 ");
         String linea = System.console().readLine();
       System.out.print("Diga el primer número ");
         int primerNumero = Integer.parseInt(System.console().readLine());
