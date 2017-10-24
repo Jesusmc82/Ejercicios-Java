@@ -1,12 +1,18 @@
 /**
-* Realiza un minicuestionario con 10 preguntas tipo test sobre las asignaturas
-* que se imparten en el curso. Cada pregunta acertada sumará un punto. El
-* programa mostrará al final la calificación obtenida. Pásale el minicuestionario
-* a tus compañeros y pídeles que lo hagan para ver qué tal andan de conoci-
-* mientos en las diferentes asignaturas del curso.
+* Escribe un programa que diga cuál es la última cifra de un número entero
+* introducido por teclado.
 *
 * @author Jesus Martin Castro
 */
 public class Ejercicio17{
   public static void main(String[] args) {
-    System.out.print("Vamos a realizar un pequeño cuestionario sobre lo que llevamos de curso");
+    System.out.print("Voy hayar el último digito de su número entero introducido por pantalla.");
+      String linea = System.console().readLine();
+    System.out.print("Introduzcalo ahora: ");
+      int numeroIntroducido= Integer.parseInt(System.console().readLine());
+      
+      int ultimaCifra = numeroIntroducido%10;
+      
+    System.out.println("El último digito introducido de su número " + numeroIntroducido + " es: " + ultimaCifra);
+  }
+}
