@@ -125,14 +125,14 @@ public class Ejercicio16{
         } else {
         }
         
-        System.out.print("Su puntuación es: " + puntos);
+        System.out.println("Su puntuación es: " + puntos);
         
-    if ((puntos >= 0) $$ (puntos <= 10)) {    
+    if ((puntos >= 0) && (puntos <= 10)) {    
       System.out.println("¡Enhorabuena! tu pareja parece ser totalmente fiel.");
-    } else if ((puntos>= 11) $$ (puntos <= 22)) {
+    } else if ((puntos>= 11) && (puntos <= 22)) {
       System.out.print("Quizás exista el peligro de otra persona en su vida o en su mente,");
       System.out.print(" aunque seguramente será algo sin importancia. No bajes la guardia.");
-    } else if ((puntos>=23) $$ (puntos<=30)) {
+    } else if ((puntos>=23) && (puntos<=30)) {
       System.out.print("Tu pareja tiene todos los ingredientes para estar viviendo ");
       System.out.print(" un romance con otra persona. Te aconsejamos que indagues ");
       System.out.println(" un poco más y averigües que es lo que está pasando por su cabeza.");
