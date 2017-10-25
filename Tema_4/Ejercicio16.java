@@ -103,7 +103,7 @@ public class Ejercicio16{
         } else {
         }
         
-    System.out.println("9- ¿Muchos días viene tarde después de trabajar porque dice tener mucho más trabajo?");
+    System.out.println("9- ¿Has notado que últimamente se perfuma más?");
     System.out.println("Responda: ");
     System.out.println("  - Verdadero (V) ");
     System.out.println("  - Falso (F) ");

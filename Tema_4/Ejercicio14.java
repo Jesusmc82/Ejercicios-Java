@@ -11,24 +11,15 @@ public class Ejercicio14 {
       String linea = System.console().readLine();
     System.out.print("Diga ahora un número al azar: ");
       int numero = Integer.parseInt(System.console().readLine());
-      boolean esPar = false;
-      boolean esDivCinco = false;
       
-      if (numero%2 == 0) {
-        esPar = true;
-      }
-      
-      if (numero % 5 == 0) {
-        esDivCinco = true;
-      }
-      
-      if (esPar) {
-        System.out.println("El número introducido es par");
-      }
-      
-      if (esDivCinco) {
-        System.out.println("El número introducido es divisible entre 5");
-      }
-      
+      if ((numero%2 == 0) && (numero % 5 == 0)) {
+    System.out.println("El numero introducido es par y divisible entre 5");
+    } else if (numero%2 == 0) {
+      System.out.println("El numero introducido es par");
+    }else if (numero % 5 == 0) {
+      System.out.println("El numero introducido es divisible entre 5");
+      } else {
+      System.out.println("El número introducido no es par, ni divisible entre 5");
+    }     
   }
 }

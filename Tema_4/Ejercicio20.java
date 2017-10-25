@@ -7,7 +7,6 @@
 public class Ejercicio20{
   public static void main(String[] args) {
 
-
     System.out.print("¿Quiere saber si su número es capicúo? escriba un número de hasta 5 cifras y yo se lo diré: ");
     int numeroIntroducido = Integer.parseInt(System.console().readLine());
     
