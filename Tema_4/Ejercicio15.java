@@ -59,7 +59,9 @@ public class Ejercicio15 {
             System.out.println("    " + caracter + caracter);
             System.out.println("     " + caracter);
           break;
-        default:
+    default:
+            System.out.print("Esa elección no se encuentra dentro de las posibles ");
+            System.out.println("elecciones del sentido de la pirámide");
     
     }
   }

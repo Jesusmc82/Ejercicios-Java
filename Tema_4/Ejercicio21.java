@@ -17,17 +17,17 @@ public class Ejercicio21{
     System.out.print("Le hayaré la nota medía del trimestre de programación.");
       String Linea= System.console().readLine();
 
-    System.out.print("¿Qué nota sacó en el primer examen? ");//pedimos la nota que sacó en el primer examen
-      double notaPrimerExamen = Double.parseDouble(System.console().readLine());//variable para la nota del primer examen
+    System.out.print("¿Qué nota sacó en el primer examen? ");
+      double notaPrimerExamen = Double.parseDouble(System.console().readLine());
 
-    System.out.print("Ahora dígame la segunta nota: ");//solicitamos la nota que se desea sacar en el trimestre
-      double notaSegundoExamen = Double.parseDouble(System.console().readLine());//variable para la nota del trimestre
+    System.out.print("Ahora dígame la segunta nota: ");
+      double notaSegundoExamen = Double.parseDouble(System.console().readLine());
       
       if ((notaPrimerExamen < 0) || (notaSegundoExamen < 0)) {
         System.out.println("La nota media no se puede hayar con números negativos");
       }
       
-      double notaFinTrimestre = ((notaSegundoExamen * 60)/100) + ((notaPrimerExamen * 40) / 100);//usamos una sola variable para crear la formula que nos dará la nota que se debe sacar en el segundo examen.
+      double notaFinTrimestre = (notaSegundoExamen + notaPrimerExamen) / 2;
     
      if ((notaFinTrimestre >= 0) && (notaFinTrimestre < 5)) {
         System.out.println("La media le da un insuficiente= " + notaFinTrimestre);
