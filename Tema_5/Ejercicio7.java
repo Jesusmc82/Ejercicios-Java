@@ -25,7 +25,7 @@ public class Ejercicio7{
         }else{
     
           System.out.println("Procure introducir de nuevo la clave: ");      
-        }    
+        }
     }
   }
 }
