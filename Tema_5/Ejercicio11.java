@@ -15,16 +15,16 @@ public class Ejercicio11{
       int numeroCubo= 0;
       int control = 0;
     
-    System.out.printf("%-10s %-10s %-8s", "Numero", "Cubo²", "Cuadrado³\n");
-    System.out.println("-------------------------------");
+    System.out.printf("%-10s %-15s %-13s", "Numero", "Cubo²", "Cuadrado³\n");
+    System.out.println("------------------------------------------------");
     
       do {
         
         numeroCuadrado = numero * numero;
         numeroCubo = numero * numero * numero;
         
-        System.out.printf("%3d %10d %13d\n", numero, numeroCuadrado, numeroCubo);
-        System.out.println("-------------------------------");
+        System.out.printf("%3d %10d²= %1d %13d³= %1d\n", numero, numero, numeroCuadrado, numero, numeroCubo);
+        System.out.println("-------------------------------------------");
         
         numero ++;
         
