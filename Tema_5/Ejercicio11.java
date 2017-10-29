@@ -15,7 +15,7 @@ public class Ejercicio11{
       int numeroCubo= 0;
       int control = 0;
     
-    System.out.printf("%-10s %-15s %-8s", "Numero", "Cubo²", "Cuadrado³\n");
+    System.out.printf("%-10s %-15s %-6s", "Numero", "Cuadrado²", "Cubo³\n");
     System.out.println("-------------------------------------------");
     
       do {
