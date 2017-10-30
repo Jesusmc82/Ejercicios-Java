@@ -16,30 +16,26 @@ public class Ejercicio15{
     System.out.print("Diga su exponente: ");
       int exponente = Integer.parseInt(System.console().readLine());
       
-    System.out.print("\n");  
-    System.out.println("Le voy a calcular la siguiente potencia " + base + "^" + exponente);
-    
-    int potencia = 1;
-    int control = 0;
-    int resultado= 0;
+    System.out.println();  
+      int potencia = 1;
+      int control = 1;
+      int resultado= 0;
     
     if (exponente==0) {
     
-      System.out.println(" ");
+     System.out.println("El resultado de su potencia " + base + "^" + exponente + " es: 1");
     
     } else {
       
       do {
           
           resultado = potencia * base;
-          
+          System.out.println("El resultado de su potencia " + base + "^" + control + " es: " + resultado);  
           potencia = resultado;
-          
           control ++;
-      
-      } while (control <= exponente - 1);
+        
+      } while (control <= exponente);
     }
     
-    System.out.println("El resultado de su potencia " + base + "^" + exponente + " es: " + resultado);
   }
 }
