@@ -13,6 +13,8 @@ public class Ejercicio7{
     System.out.println("Intentemos abrir esta caja fuerte: ");
     
     for( int oportunidades = 0; oportunidades < 4; oportunidades ++) {
+      System.out.println("Oportunidad " + (oportunidades + 1));
+      System.out.print("Clave: ");
       
       int clave = Integer.parseInt(System.console().readLine());
       
@@ -23,8 +25,12 @@ public class Ejercicio7{
           oportunidades = oportunidades + 4;
           
         }else{
-    
-          System.out.println("Procure introducir de nuevo la clave: ");      
+          if (oportunidades < 3) {
+            System.out.println();
+            System.out.println("Procure introducir de nuevo la clave: ");
+          } else {
+            System.out.println("Lo sentimos, se ha quedado sin oportunidades.");
+          }
         }
     }
   }
