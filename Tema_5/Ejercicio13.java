@@ -8,7 +8,7 @@ public class Ejercicio13{
   public static void main(String[] args) {
     
     System.out.print("Introduzca una seria de 10 números tanto negativos como positivos ");
-    System.out.println("yo se los separaré en dos columnas");
+    System.out.println("yo le diré cuántos de ellos son negativos y cuántos positivos");
 
       int control = 0;
       int controlDos= 1;
