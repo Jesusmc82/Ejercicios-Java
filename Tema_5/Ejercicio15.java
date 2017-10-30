@@ -23,14 +23,14 @@ public class Ejercicio15{
     
     if (exponente==0) {
     
-     System.out.println("El resultado de su potencia " + base + "^" + exponente + " es: 1");
+     System.out.println(" " + base + "^" + exponente + " es: 1");
     
     } else {
       
       do {
           
           resultado = potencia * base;
-          System.out.println("El resultado de su potencia " + base + "^" + control + " es: " + resultado);  
+          System.out.println(" " + base + "^" + control + " : " + resultado);  
           potencia = resultado;
           control ++;
         
