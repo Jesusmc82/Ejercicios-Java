@@ -1,36 +1,43 @@
 /**
-* Escribe un programa que muestre en tres columnas, el cuadrado y el cubo de
-* los 5 primeros números enteros a partir de uno que se introduce por teclado.
+* Escribe un programa que muestre los n primeros términos de la serie de
+* Fibonacci. El primer término de la serie de Fibonacci es 0, el segundo es 1
+* y el resto se calcula sumando los dos anteriores, por lo que tendríamos que
+* los términos son 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144... El número n se
+* debe introducir por teclado.
 *
 * @author Jesus Martin Castro
 */
-public class Ejercicio11{
+public class Ejercicio12{
   public static void main(String[] args) {
     
-    System.out.print("Escriba un número y le calcularé el cuadrado y el cubo de ");
-    System.out.print(" ese número y sus 5 consiguientes. ");
-      int numero = Integer.parseInt(System.console().readLine());
+    System.out.println("Voy a enseñarle la serie Fibonacci en la cantidad de números que desee.");
+    System.out.print("Introduzca ahora esa cantidad: ");
+      int cantidad = Integer.parseInt(System.console().readLine());
     
-      int numeroCuadrado= 0;
-      int numeroCubo= 0;
       int control = 0;
+      int numeroUno= 0;
+      int numeroDos= 1;
+      int numeroFibo= 0;
     
     System.out.print("\n");
-    System.out.printf("%-10s %-15s %-6s", "Numero", "Cuadrado²", "Cubo³\n");
-    System.out.println("-------------------------------------");
-        
-      do {
-        
-        numeroCuadrado = numero * numero;
-        numeroCubo = numero * numero * numero;
-        
-        System.out.printf("%3d %9d²= %1d %9d³= %1d\n", numero, numero, numeroCuadrado, numero, numeroCubo);
-        System.out.println("-------------------------------------");
-        
-        numero ++;
-        
-        control ++;
-        
-      } while (control <= 4);    
+    
+      if(cantidad == 0) {
+          
+        System.out.print(" ");
+          
+      }else{  
+          
+          do {
+            
+            numeroUno = numeroDos;
+            numeroDos = numeroFibo;
+            
+            System.out.print(" " + numeroFibo);
+            
+            numeroFibo = numeroUno + numeroDos;
+            control ++;
+            
+          } while (control <= cantidad - 1);    
+      }
   }
 }
