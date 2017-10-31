@@ -11,11 +11,12 @@ public class Ejercicio10{
     
     System.out.println("Meta varios números y le daré la suma y la media de todos ellos.");
     System.out.print("Introduzca todos los números que desee, para acabar introduzca un número negativo.");
-      String linea = System.console().readLine();
+    System.out.print("Pulse intro para continuar.");
+    String linea = System.console().readLine();
         
-      int suma = 0;
-      int contador = 0;
-      int numeroIntroducido;
+      double suma = 0;
+      double contador = 0;
+      double numeroIntroducido;
         
         do {
           
@@ -29,9 +30,15 @@ public class Ejercicio10{
               }
           
         } while (numeroIntroducido >= 0);
-
-      int media = suma / contador;
-    System.out.println("La suma de sus números introducidos es: " + suma);
-    System.out.println("La media de " + suma + " / " + contador + " = " + media);
+        
+        if (contador > 0) {
+          
+          double media = suma / contador;
+          System.out.println("La suma de sus números introducidos es: " + suma);
+          System.out.println("La media de " + suma + " / " + contador + " = " + media);
+        } else {
+          System.out.print("No se ha podido calcular la media porque no se ");
+          System.out.println("ha introducido ningún número positivo");
+        }
   }
 }
