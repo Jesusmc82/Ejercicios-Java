@@ -7,6 +7,7 @@
 */
 public class Ejercicio17{
   public static void main(String[] args) {
+    
     System.out.println("Dígame un número y le sumaré sus 100 siguientes números");
     System.out.print("Díga ahora su número: ");
       int numeroIntroducido= Integer.parseInt(System.console().readLine());
@@ -17,10 +18,11 @@ public class Ejercicio17{
     for (int control = 1; control <=100; control ++) {
       
       suma = suma + sumatorio;
+      System.out.print("" + sumatorio + "+");
       sumatorio ++;
-    
     }
     
+    System.out.println(" = " + suma);
     System.out.print("El resultado de sumar los 100 primeros números es: " + suma);
   }
 }
