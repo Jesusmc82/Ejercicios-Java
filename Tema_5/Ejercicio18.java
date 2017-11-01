@@ -16,8 +16,16 @@ public class Ejercicio18{
     
     System.out.print("Escriba ahora el primer número: ");
     int numeroUno= Integer.parseInt(System.console().readLine());
-    System.out.print("Escriba ahora el primer número: ");
+    System.out.print("Escriba ahora el segundo número: ");
     int numeroDos= Integer.parseInt(System.console().readLine());
+    System.out.print("El rango entre el " + numeroUno + " y el ");
+    System.out.print(numeroDos + " sumado de 7 en 7 es el siguiente = ");
     
+    do {
+      
+      numeroUno = 7 + numeroUno;
+      System.out.print(" " + numeroUno);
+    
+    } while ((7 + numeroUno) <= numeroDos);
   }
 }
