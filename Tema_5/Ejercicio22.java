@@ -5,36 +5,37 @@
 *
 * @author Jesus Martin Castro
 */
-public class Ejercicio16{
+public class Ejercicio22{
   public static void main(String[] args) {
     
-    System.out.println("Averigüemos si su número es primo o no.");
-    System.out.print("Introduzca ahora su número ");
-    int numeroIntroducido = Integer.parseInt(System.console().readLine());
-    
+    /*System.out.println("Averigüemos si su número es primo o no.");
+    System.out.println("Introduzca ahora su número ");
+    int numeroIntroducido = Integer.parseInt(System.console().readLine());*/
+    int primo = 2;
     int division = 2;
     int resultado = 0;
-    boolean esPrimo = true;
+    boolean esPrimo = false;
     
-        
     do {
       
-      resultado = numeroIntroducido % division;
-      if (resultado == 0) {
-        esPrimo= false;
+      
+      if ((primo <= 100) && (resultado != 0)) {
+        resultado = primo % division;
+        esPrimo= true;
+        System.out.print(" " + primo);
       }
        
       division ++;
       
-    } while (division < numeroIntroducido);
+    } while (division <= 100);
     
-     if (numeroIntroducido == 2) {
+     /*if (numeroIntroducido == 2) {
       System.out.print("Su número " + numeroIntroducido + " es primo");
     } else if (!esPrimo) {
         System.out.print("Su número " + numeroIntroducido + " no es primo");
     } else {
         System.out.print("Su número " + numeroIntroducido + " es primo");
-    }
+    }*/
     
   }
 }

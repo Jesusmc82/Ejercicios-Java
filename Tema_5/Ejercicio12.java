@@ -14,7 +14,7 @@ public class Ejercicio12{
     System.out.print("Introduzca ahora esa cantidad: ");
     int cantidad = Integer.parseInt(System.console().readLine());
   
-    int control = 0;
+    int control = 1;
     int numeroUno= 0;
     int numeroDos= 1;
     int numeroFibo= 0;
@@ -29,15 +29,15 @@ public class Ejercicio12{
           
       do {
         
-        numeroUno = numeroDos;
-        numeroDos = numeroFibo;
-        
         System.out.print(" " + numeroFibo);
         
+        numeroUno = numeroDos;
+        numeroDos = numeroFibo;
+                
         numeroFibo = numeroUno + numeroDos;
         control ++;
         
-      } while (control <= cantidad - 1);    
+      } while (control <= cantidad);    
     }
   }
 }
