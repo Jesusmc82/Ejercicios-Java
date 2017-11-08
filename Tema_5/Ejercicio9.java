@@ -17,7 +17,7 @@ public class Ejercicio9{
         do {
           
           numeroIntroducido = numeroIntroducido/10;
-          
+
           contador ++;
           
         } while (numeroIntroducido !=0);
