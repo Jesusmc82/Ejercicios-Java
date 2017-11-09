@@ -29,8 +29,8 @@ public class EjercicioEx01{
       boolean esPrimo = true;
       double contador = 0;
       double numeroIntroducido;
-      double numMax = Integer.MIN_VALUE;
-      double numMin = Integer.MAX_VALUE;
+      double numMax = Integer.MIN_VALUE;//declaración de variable para ayudar a buscar el número maximo introducido por teclado.
+      double numMin = Integer.MAX_VALUE;//declaración de variable para ayudar a buscar el número minimo introducido por teclado.
       double resultado = 0;
       double suma = 0;
         
