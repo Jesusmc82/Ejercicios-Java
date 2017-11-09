@@ -29,7 +29,7 @@ public class EjercicioEx01{
       boolean esPrimo = true;
       double contador = 0;
       double numeroIntroducido;
-      double numMax = 0;
+      double numMax = Integer.MIN_VALUE;
       double numMin = Integer.MAX_VALUE;
       double resultado = 0;
       double suma = 0;
@@ -68,6 +68,7 @@ public class EjercicioEx01{
           System.out.println("Cantidad números introducidos " + contador);
           System.out.println("Maximo " + numMax);
           System.out.println("Minimo " + numMin);
+          System.out.println("Suma " + suma);
           System.out.println("Media " + media);
           System.out.println("Primo " + numeroIntroducido);
         } else {
