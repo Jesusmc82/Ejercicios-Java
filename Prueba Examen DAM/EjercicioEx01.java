@@ -21,8 +21,8 @@
 public class EjercicioEx01{
   public static void main(String[] args) {
     
-    System.out.println("Meta varios números y le daré la suma y la media de todos ellos.");
-    System.out.println("Introduzca todos los números que desee, para acabar introduzca un número negativo.");
+    System.out.println("Meta varios números y le daré el mayor y minimo de ellos, y la media de todos ellos.");
+    System.out.println("Introduzca todos los números que desee, para acabar introduzca un número primo.");
     System.out.print("Pulse intro para continuar.");
     String linea = System.console().readLine();
         
@@ -39,12 +39,14 @@ public class EjercicioEx01{
             numeroIntroducido= Integer.parseInt(System.console().readLine()); 
             esPrimo = true;
           
-          for (int division = 2; division < numeroIntroducido; division ++) {
+         
+            for (int division = 2; division < numeroIntroducido; division ++) {
             resultado = numeroIntroducido % division;
-            if (resultado == 0) {
-            esPrimo= false;
+              if (resultado == 0) {
+              esPrimo= false;
+              }
             }
-          }
+          
                 if ((numeroIntroducido>=0) && (!esPrimo)) {
                 suma = suma + numeroIntroducido;
                 contador ++;
@@ -60,7 +62,7 @@ public class EjercicioEx01{
               }
         } while (!esPrimo);
         
-        if (esPrimo) {
+        if (esPrimo && (contador > 0)) {
           
           double media = suma / contador;
           System.out.println("Cantidad números introducidos " + contador);
@@ -69,8 +71,7 @@ public class EjercicioEx01{
           System.out.println("Media " + media);
           System.out.println("Primo " + numeroIntroducido);
         } else {
-          System.out.print("No se ha podido calcular la media porque no se ");
-          System.out.println("ha introducido ningún número positivo");
+          System.out.println("Por favor meta algún número no primo para poder realizar el programa");
         }
   }
 }
