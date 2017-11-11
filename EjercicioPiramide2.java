@@ -10,7 +10,7 @@ public class EjercicioPiramide2{
     int numCaracteres = 1;
     int espacioInt = 1;
     
-    for (int i = 1; i <= espacio + 1; i++) {
+    for (int i = 1; i <= espacio; i++) {
       System.out.print(" ");
     }
       
@@ -22,7 +22,7 @@ public class EjercicioPiramide2{
     
     do {
       
-      for (int i = 1; i <= espacio; i++) {
+      for (int i = 1; i <= espacio-1; i++) {
         System.out.print(" ");
       }
       
@@ -45,9 +45,9 @@ public class EjercicioPiramide2{
      espacioInt += 2;
      numCaracteres+= 2;
   
-    }while (altura <= alturaIntroducida);
+    }while (altura <= alturaIntroducida-1);
     
-    for (int i = 1; i <= numCaracteres +2; i++) {
+    for (int i = 1; i <= numCaracteres+2; i++) {
         System.out.print(caracter);
     }
   }
