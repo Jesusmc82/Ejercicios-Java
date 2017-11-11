@@ -19,7 +19,6 @@ public class EjercicioEx04{
     
     int numeroNuevo = 0;
     int aux = 0;
-    int numeroNormal = 0;
     boolean esNormal = false;
     
     while (numeroIntroducido >= 1) {//hacemos bucle para primero darle la vuelta al número
