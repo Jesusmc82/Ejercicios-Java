@@ -24,7 +24,7 @@ public class Ejercicio19{
     
     do {
       
-      for (int controlEsp = 0; controlEsp<= espacios; controlEsp++) {// controlEsp nos ayuda a controlar el números espacios por línea
+      for (int controlEsp = 1; controlEsp<= espacios; controlEsp++) {// controlEsp nos ayuda a controlar el números espacios por línea
         System.out.print(" ");
       }
       
