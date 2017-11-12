@@ -3,22 +3,22 @@
 *
 * @author Jesus Martin Castro
 */
-public class EjercicioPiramide{
+public class EjercicioRectangulo{
   public static void main(String[] args) {
-   
-    System.out.print("Introduzca una altura para su piramide ");
+    System.out.print("Introduzca una altura para su rectangulo o cuadrado ");
     int alturaIntroducida = Integer.parseInt(System.console().readLine());
+    System.out.print("Introduzca una altura para su rectangulo o cuadrado ");
+    int baseIntroducida = Integer.parseInt(System.console().readLine());
     System.out.print("Ahora introduzca un caracter con el que quiera dibujar la piramide ");
     String caracter = System.console().readLine();
-    int espacio = alturaIntroducida - 1;
+    
     int altura = 1;
     int numCaracteres = 1;
     System.out.println();
-    
     do {
       
-      for (int i = 1; i <= espacio; i++) {
-        System.out.print(" ");
+      for (int i = 1; i <= baseIntroducida-1; i++) {
+        System.out.print(caracter);
       }
       
       for (int j = 1; j <= numCaracteres; j++) {
@@ -29,8 +29,6 @@ public class EjercicioPiramide{
      System.out.println();
      
      altura++;
-     espacio--;
-     numCaracteres+=2;
   
     }while (altura <= alturaIntroducida);
   }

@@ -1,3 +1,8 @@
+/**
+* Piramide vacia
+*
+* @author Jesus Martin Castro
+*/
 public class EjercicioPiramide2{
   public static void main(String[] args) {
    
@@ -9,6 +14,7 @@ public class EjercicioPiramide2{
     int altura = 1;
     int numCaracteres = 1;
     int espacioInt = 1;
+    System.out.println();
     
     for (int i = 1; i <= espacio; i++) {
       System.out.print(" ");
