@@ -7,7 +7,8 @@
 */
 public class Ejercicio5 {
   public static void main(String[] args) {
-    System.out.print("Le mostraré 50 números de manera aleatoria entre el 100 y el 199:");
+    System.out.print("Le mostraré 50 números de manera aleatoria entre el 100 y el 199");
+    System.out.println(" le mostraré la suma, la media, el número mínimo y máximo de los números impresos por pantalla:");
     String salto = System.console().readLine();
     
     int numMax = Integer.MIN_VALUE;
@@ -16,25 +17,27 @@ public class Ejercicio5 {
     int numerosAleatorios = 0;
     int contador = 0;
     
-          for (int j = 1; j <= 50; j++) {
-            numerosAleatorios = (int)(Math.random()*100) + 100;
-            System.out.print(" " + numerosAleatorios);
-              suma = suma + numerosAleatorios;
-                if (numerosAleatorios > numMax) { 
-                    numMax = numerosAleatorios;
-                } 
-                if (numerosAleatorios < numMin) {
-                    numMin = numerosAleatorios;
-                }
-              contador ++;
-          }
+    for (int j = 1; j <= 50; j++) {
+      numerosAleatorios = (int)(Math.random()*100) + 100;
+      System.out.print(" " + numerosAleatorios);
+      suma = suma + numerosAleatorios;
           
-          double media = suma / contador;
-          System.out.println();
-          System.out.println("Maximo " + numMax);
-          System.out.println("Minimo " + numMin);
-          System.out.println("Suma " + suma);
-          System.out.println("Cantidad números introducidos " + contador);
-          System.out.println("Media " + media);
+        if (numerosAleatorios > numMax) { 
+            numMax = numerosAleatorios;
+        } 
+        if (numerosAleatorios < numMin) {
+            numMin = numerosAleatorios;
+        }
+      contador ++;
+    }
+    
+    System.out.println();
+    double media = suma / contador;
+    System.out.println();
+    System.out.println("Maximo: " + numMax);
+    System.out.println("Minimo: " + numMin);
+    System.out.println("Suma: " + suma);
+    System.out.println("Cantidad números introducidos: " + contador);
+    System.out.println("" + suma +" / " + contador + " = " + media + " media de los números impresos");
   }
 }
