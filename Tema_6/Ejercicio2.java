@@ -56,13 +56,13 @@ public class Ejercicio2 {
         cartaSacada = String.valueOf("10 de");
         break;
         case 11:
-        cartaSacada = String.valueOf("J de");
+        cartaSacada = "J de";
         break;
         case 12:
-        cartaSacada = String.valueOf("Q de");
+        cartaSacada = "Q de";
         break;
         case 13:
-        cartaSacada = String.valueOf("K de");
+        cartaSacada = "K de";
         break;
       default:
       }

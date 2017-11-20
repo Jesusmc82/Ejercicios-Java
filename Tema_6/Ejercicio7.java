@@ -16,8 +16,8 @@ public class Ejercicio7 {
     for (int j = 1; j <= 14; j++) {
       System.out.print("" + casillas + ". ");
       
-      for (int i = 1; i<= columnas; i ++) {
-        int quiniela = (int)(Math.random()*3) + 0;
+      for (int i = 1; i<= columnas; i++) {
+        int quiniela = (int)(Math.random()*3);
         switch(quiniela) {
           case 0:
             System.out.print("X");
@@ -37,7 +37,7 @@ public class Ejercicio7 {
     }
     
     System.out.print("15. ");
-    int quiniela = (int)(Math.random()*3) + 0;
+    int quiniela = (int)(Math.random()*3);
     switch(quiniela) {
       case 0:
         System.out.print("X");
