@@ -15,9 +15,9 @@ public class Ejercicio1 {
     
     int suma = 0;
 
-    for (int i = 0; i < 3; i++) {
+    for (int i = 1; i <= 3; i++) {
       
-      int dado = (int)(Math.random()*7) + 1;
+      int dado = (int)(Math.random()*6) + 1;
       
       switch (dado) {
         case 1:
