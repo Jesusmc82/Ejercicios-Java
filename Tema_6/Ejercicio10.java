@@ -10,11 +10,13 @@ public class Ejercicio10 {
   
     int linea = 0;
     int fila = 10;
+    String verde = "\033[32m";
     
     for (int i = 1; i<= fila; i++) {
       linea = (int)(Math.random()*41)+1;
       for (int j = 1; j <= linea; j++) {
         int dibujo = (int)(Math.random()*7);
+        System.out.print(verde);
         switch(dibujo) {
           case 1:
             System.out.print("*");

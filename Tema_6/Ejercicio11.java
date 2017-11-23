@@ -20,22 +20,23 @@ public class Ejercicio11 {
     for (int i = 1; i<= numeroNota; i++) {
       nota = (int)(Math.random()*11);
       if ((nota >= 0) && (nota <= 4)) {
-        System.out.println("Suspensos");
+        System.out.print(" Suspensos, ");
         suspenso++;
       } else if (nota == 5) {
-        System.out.println("Suficiente");
+        System.out.print(" Suficiente, ");
         suficiente++;
       } else if (nota == 6) {
-        System.out.println("Bien");
+        System.out.print(" Bien, ");
         bien++;
       } else if ((nota >= 7) && (nota <= 8)) {
-        System.out.println("Notable");
+        System.out.print(" Notable, ");
         notable++;
       } else if ((nota >= 9) && (nota <= 10)) {
-        System.out.println("Sobresaliente");
+        System.out.print(" Sobresaliente, ");
         sobresaliente++;
       }
     } 
+      System.out.println();
       System.out.println("___________________");
       System.out.println("Total suspensos= " + suspenso);
       System.out.println("Total suficiente= " + suficiente);

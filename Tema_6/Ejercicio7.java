@@ -14,11 +14,16 @@ public class Ejercicio7 {
     int columnas = 3;
     int casillas = 1;
     
-    for (int j = 1; j <= 14; j++) {
+    for (int j = 1; j <= 15; j++) {
       System.out.printf("%2d. ", casillas);
       
       for (int i = 1; i<= columnas; i++) {
         int quiniela = (int)(Math.random()*3);
+        
+        if (j == 15) {
+          columnas = 1;
+        }
+        
         switch(quiniela) {
           case 0:
             System.out.print("| X ");
@@ -37,21 +42,5 @@ public class Ejercicio7 {
       casillas++;
     }
     
-    System.out.println();
-    System.out.print("15. ");
-    int quiniela = (int)(Math.random()*3);
-    switch(quiniela) {
-      case 0:
-        System.out.print("| X ");
-      break;
-      case 1:
-        System.out.print("|1  ");
-      break;
-      case 2:
-        System.out.print("|  2");
-      break;
-    default:
-    }
-    System.out.println("|");
   }
 }
