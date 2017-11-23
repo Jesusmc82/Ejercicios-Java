@@ -66,7 +66,7 @@ public class Ejercicio13 {
       if ((dado1 == dado2)&&(dado2 == dado1)) {
         Thread.sleep(1);
       } else { 
-      Thread.sleep(1000);
+      Thread.sleep(500);
       }
       
     } while ((dado1 != dado2)&&(dado2 != dado1));

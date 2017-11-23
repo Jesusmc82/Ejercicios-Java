@@ -12,10 +12,10 @@ public class Ejercicio9 {
   int numeroAleatorio = 0;
   
   while (numeroAleatorio != 24) {
+    
     numeroAleatorio = (int)(Math.random()*51)*2;
-
-      System.out.print(" " + numeroAleatorio);
-      contador ++;
+    System.out.print(" " + numeroAleatorio);
+    contador ++;
   }
   System.out.println();
   System.out.println ("Los números generados son: " + contador);

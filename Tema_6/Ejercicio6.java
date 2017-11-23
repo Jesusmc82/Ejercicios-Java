@@ -11,7 +11,7 @@ public class Ejercicio6 {
     System.out.println("Voy a pensar un número y ud. tendrá 5 oportunidades para averigüarlo.");
     System.out.println("Empecemos:");
     
-    int numeroPensado = (int)(Math.random()*100);;
+    int numeroPensado = (int)(Math.random()*100);
     int numeroInsertado = 0;
     int contador = 5;
     boolean acertado = false;
