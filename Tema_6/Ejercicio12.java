@@ -9,7 +9,7 @@ public class Ejercicio12 {
   public static void main(String[] args) throws InterruptedException {
     
     String verde = "\033[32m";
-    
+    Thread.sleep(100);
     for (int i=0; i<600000; i++) {
       System.out.print(verde);
       System.out.print((char)((int)(Math.random()*94) + 32));
