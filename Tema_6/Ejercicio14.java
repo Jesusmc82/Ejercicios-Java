@@ -8,7 +8,7 @@
 * @author Jesus Martin Castro
 */
 public class Ejercicio14 {
-  public static void main(String[] args) throws InterruptedException{
+  public static void main(String[] args){
     
     System.out.println("Piensa un número entre entre 0 y 100, yo procuraré adivinarlo.");
     System.out.print("Empecemos:");
@@ -43,7 +43,7 @@ public class Ejercicio14 {
         } else if (reCalculo.equals("mayor")) {
           numeroMinimo = numeroAdivinar + 1;
         }
-        
+         
       } else if (acierto.equals("si")) {
           acertado = true;
           System.out.println("¡¡ESTUPENDO HE ACERTADO!!");
