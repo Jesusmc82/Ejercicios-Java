@@ -24,61 +24,57 @@
 public class Ejercicio16 {
   public static void main(String[] args){
     
-    System.out.println("Vamos a crear una melodia, con un compás de compasillo (4/4)");
-    System.out.print("Pulse INTRO para generar la melodía:");
-    String salto = System.console().readLine();
-    int compas = (int)(Math.random()* 7) + 1;
-    String ultimaNota = "";
-    String notaString = "";
+    System.out.println("Juguemos a una maquina tragaperras, inserte su moneda.");
+    System.out.print("Pulse INTRO cuando inserte su moneda:");
+    System.console().readLine();
+    String figuraUno = "";
+    String figuraDos = "";
+    String figuraTres = "";
+    String figuras = "";
+      
+    for(int i = 1; i <= 3; i++) {
     
-    for(int j = 0; j <= compas; j++) {
-      
-      for(int i = 1; i <= 4; i++) {
-      
-      int nota = (int)(Math.random()* 7) + 1;
-      
-      switch(nota) {
+      switch((int)(Math.random()* 5) + 1) {
           case 1:
-            notaString = " Do ";
-          break;
+            figuras = " Corazón ";
+            break;
           case 2:
-            notaString = " Re ";
-          break;
+            figuras = " Diamante ";
+            break;
           case 3:
-            notaString =" Mi ";
-          break;
+            figuras = " Herradura ";
+            break;
           case 4:
-            notaString = " Fa ";
-          break;
+            figuras = " Campana ";
+            break;
           case 5:
-            notaString =" Sol ";
-          break;
-          case 6:
-            notaString = " La ";
-          break;
-          case 7:
-            notaString = " Si ";
-          break;
+            figuras =" Limón ";
+            break;
         default:
-        }
-        
-        if ((j == 0) && (i == 1)) {
-          ultimaNota = notaString;
-        }
-        
-        if ((j==compas)&&(i==4)) {
-          
-          System.out.print(ultimaNota);
-        } else {
-        System.out.print(notaString);
-        }
       }
       
-      if (j<compas) {
-        System.out.print("|");
-      } else if (j==compas) {
-        System.out.print("||");
+      System.out.print(figuras);
+        
+      if (i == 1) {
+        figuraUno = figuras;
       }
+      if (i == 2) {
+        figuraDos = figuras;
+      }
+      if (i == 3) {
+        figuraTres = figuras;
+      }
+    }
+    
+    System.out.println();
+    
+    if ((figuraUno == figuraDos) && (figuraDos == figuraTres) && (figuraUno == figuraTres)) {
+      System.out.println("Enhorabuena, ha ganado 10 monedas.");
+    } else if ((figuraUno != figuraDos) && (figuraDos != figuraTres) && (figuraUno != figuraTres)) {
+      System.out.println("Lo siento, ha perdido.");
+    } else if ((figuraUno == figuraDos) || (figuraDos == figuraTres) || (figuraUno == figuraTres)) {
+      System.out.println("Bien, ha recuperado su moneda.");
+    } else {
     }
   }
 }

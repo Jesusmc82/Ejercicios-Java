@@ -20,18 +20,17 @@ public class Ejercicio15 {
     
     System.out.println("Vamos a crear una melodia, con un compás de compasillo (4/4)");
     System.out.print("Pulse INTRO para generar la melodía:");
-    String salto = System.console().readLine();
+    System.console().readLine();
     int compas = (int)(Math.random()* 7) + 1;
     String ultimaNota = "";
     String notaString = "";
     
     for(int j = 0; j <= compas; j++) {
       
+      //genera las notas dentro del compás.
       for(int i = 1; i <= 4; i++) {
       
-      int nota = (int)(Math.random()* 7) + 1;
-      
-      switch(nota) {
+        switch((int)(Math.random()* 7) + 1) {
           case 1:
             notaString = " Do ";
           break;
@@ -39,13 +38,13 @@ public class Ejercicio15 {
             notaString = " Re ";
           break;
           case 3:
-            notaString =" Mi ";
+            notaString = " Mi ";
           break;
           case 4:
             notaString = " Fa ";
           break;
           case 5:
-            notaString =" Sol ";
+            notaString = " Sol ";
           break;
           case 6:
             notaString = " La ";
@@ -60,7 +59,7 @@ public class Ejercicio15 {
           ultimaNota = notaString;
         }
         
-        if ((j==compas)&&(i==4)) {
+        if ((j == compas) && (i ==  4)) {
           
           System.out.print(ultimaNota);
         } else {
@@ -68,9 +67,9 @@ public class Ejercicio15 {
         }
       }
       
-      if (j<compas) {
+      if (j < compas) {
         System.out.print("|");
-      } else if (j==compas) {
+      } else if (j == compas) {
         System.out.print("||");
       }
     }
