@@ -33,7 +33,7 @@ public class Ejercicio14 {
       acierto = System.console().readLine().toLowerCase();
       
       if (acierto.equals("no")) {
-        System.out.printf("%6.1s %-1.18s", "¿", "es mayor o menor? ");
+        System.out.printf("%6.1s %1.18s", "¿", "es mayor o menor? ");
         reCalculo = System.console().readLine().toLowerCase();
         contador --;
         
