@@ -12,7 +12,7 @@ public class Ejercicio14 {
     
     System.out.println("Piensa un número entre entre 0 y 100, yo procuraré adivinarlo.");
     System.out.print("Empecemos:");
-    String salto = System.console().readLine();
+    System.console().readLine();
     
     int numeroAdivinar = 0;
     int numeroAcertado = 0;

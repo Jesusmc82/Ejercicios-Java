@@ -31,7 +31,7 @@ public class Ejercicio16 {
     String figuraDos = "";
     String figuraTres = "";
     String figuras = "";
-      
+    
     for(int i = 1; i <= 3; i++) {
     
       switch((int)(Math.random()* 5) + 1) {
