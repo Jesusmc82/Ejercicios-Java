@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Ejercicio18 {
   public static void main(String[] args){
     
-    System.out.println("Vamos a pintar de forma aleatoria de la casa de Sinestesio y Casilda.");
+    System.out.println("Vamos a pintar de forma aleatoria la casa de Sinestesio y Casilda.");
     System.out.print("Pulse INTRO para continuar:");
     System.console().readLine();
     String dormitorioUno = "blanco";
