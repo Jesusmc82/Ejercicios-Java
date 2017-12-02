@@ -17,10 +17,7 @@ public class Ejercicio2 {
     System.out.println("Le mostraré una carta de la baraja francesa al azar: ");
     System.out.print("(Pulse Intro para continuar)");
     String tirada = System.console().readLine();
-    
-    int suma = 0;
 
-      
       int carta = (int)(Math.random()*13) + 1;
       String cartaSacada = "";
       

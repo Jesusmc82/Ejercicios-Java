@@ -18,49 +18,49 @@ public class Ejercicio21 {
     System.out.print("Lanzaremos 5 monedas al aire y sacaremos cara o cruz: ");
     System.console().readLine();
 
-      for(int i = 1; i <= 5; i ++) {
-        
-        String moneda = "";
-        
-        switch((int)(Math.random()* 8) + 1) {
-          case 1:
-            moneda = "1 céntimo - ";
-            break;
-          case 2:
-            moneda = "2 céntimos - ";
-            break;
-          case 3:
-            moneda = "5 céntimos - ";
-            break;
-          case 4:
-            moneda = "10 céntimos - ";
-            break;
-          case 5:
-            moneda ="20 céntimos - ";
-            break;
-          case 6:
-            moneda ="50 céntimos - ";
-            break;
-          case 7:
-            moneda ="1 euro - ";
-            break;
-          case 8:
-            moneda ="2 euros - ";
-            break;
-          default:
-        }
+    for(int i = 1; i <= 5; i ++) {
       
-        switch((int)(Math.random()* 2) + 1) {
-          case 1:
-            moneda += "cara";
-            break;
-          case 2:
-            moneda += "cruz";
-            break;
-          default:
-        }
+      String moneda = "";
       
-      System.out.println(moneda);
+      switch((int)(Math.random()* 8) + 1) {
+        case 1:
+          moneda = "1 céntimo - ";
+          break;
+        case 2:
+          moneda = "2 céntimos - ";
+          break;
+        case 3:
+          moneda = "5 céntimos - ";
+          break;
+        case 4:
+          moneda = "10 céntimos - ";
+          break;
+        case 5:
+          moneda ="20 céntimos - ";
+          break;
+        case 6:
+          moneda ="50 céntimos - ";
+          break;
+        case 7:
+          moneda ="1 euro - ";
+          break;
+        case 8:
+          moneda ="2 euros - ";
+          break;
+        default:
       }
+    
+      switch((int)(Math.random()* 2) + 1) {
+        case 1:
+          moneda += "cara";
+          break;
+        case 2:
+          moneda += "cruz";
+          break;
+        default:
+      }
+    
+    System.out.println(moneda);
+    }
   }
 }
