@@ -15,25 +15,25 @@ public class Ejercicio25 {
 
     int numeroAleatorio = 0;
     boolean esPrimo = true;
-      
+    
     for (int i = 1; i <= 100; i++) {
 
       numeroAleatorio = (int)(Math.random()* 191) + 10;
       
       esPrimo= true;
       
-      if (numeroAleatorio % 5 == 0) {
-        System.out.print(" [" + numeroAleatorio + "] ");
-      }
-      
       for (int division = 2; division < numeroAleatorio; division ++) { 
         if (numeroAleatorio % division == 0) {
         esPrimo = false;
         }
       }
-    
-      if(esPrimo) {
+      
+      if (numeroAleatorio % 5 == 0) {
+        System.out.print(" [" + numeroAleatorio + "] ");
+      } else if(esPrimo) {
         System.out.print(" #" + numeroAleatorio + "# ");
+      } else {
+        System.out.print(" " + numeroAleatorio);
       }
     }
   }
