@@ -12,6 +12,7 @@ public class Ejercicio10 {
     
     int[] numero = new int[20];
     
+    System.out.println("Array original: ");
     for (int i = 0; i < 20; i++) { 
       numero[i] = (int)(Math.random()* 100);    
       System.out.print(" " + numero[i]);
@@ -27,7 +28,6 @@ public class Ejercicio10 {
         System.out.print(" " + numero[i]);
       }
     }
-    System.out.print(" |");
     
     for (int i = 0; i < 20; i++) {
       if ((numero[i] % 2 != 0) && (numero[i]!=0)) {

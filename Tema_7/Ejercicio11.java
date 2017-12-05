@@ -3,7 +3,7 @@
 * un array. A continuación se mostrará el contenido de ese array junto al índice
 * (0 – 9) utilizando para ello una tabla. Seguidamente el programa pasará los
 * primos a las primeras posiciones, desplazando el resto de números (los que
-*no son primos) de tal forma que no se pierda ninguno. Al final se debe mostrar
+* no son primos) de tal forma que no se pierda ninguno. Al final se debe mostrar
 * el array resultante.
 *
 * @author Jesus Martin Castro
@@ -14,8 +14,6 @@ public class Ejercicio11 {
     int[] numero = new int[10];
     int[] numeroPrimo = new int[10];
     int[] numeroNoPrimo = new int[10];
-    int contadorPrimo = 0;
-    int contadorNoPrimo = 0;
     boolean esPrimo = true;
     
     for (int i = 0; i < 10; i++) {
@@ -29,12 +27,17 @@ public class Ejercicio11 {
       }
       if (esPrimo) {
         numeroPrimo[i] = numero[i];
-        contadorPrimo++;
       } else {
         numeroNoPrimo[i] = numero[i];
-        contadorNoPrimo++;
       }
     }
+    
+    for (int i = 0; i < 10; i++) {
+      System.out.print(" " + numero[i]);
+    }
+    
+    System.out.println();
+    System.out.println("Array organizado con los primos en primer lugar: ");
     
     for (int n:numeroPrimo) {
       if (n!=0) {
