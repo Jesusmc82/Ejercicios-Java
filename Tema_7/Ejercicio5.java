@@ -1,33 +1,35 @@
 /**
-* Define tres arrays de 20 números enteros cada una, con nombres numero ,
-* cuadrado y cubo . Carga el array numero con valores aleatorios entre 0 y 100. En el
-* array cuadrado se deben almacenar los cuadrados de los valores que hay en el
-* array numero . En el array cubo se deben almacenar los cubos de los valores que
-* hay en numero . A continuación, muestra el contenido de los tres arrays dispuesto
-* en tres columnas.
+* Escribe un programa que pida 10 números por teclado y que luego muestre
+* los números introducidos junto con las palabras “máximo” y “mínimo” al lado
+* del máximo y del mínimo respectivamente.
 *
 * @author Jesus Martin Castro
 */
 public class Ejercicio5 {
   public static void main(String[] args){
     
-    System.out.print("Voy a generar 20 números aleatorios y le mostraré su cuadrado y cubo(pulse INTRO para continuar): ");
+    System.out.print("Introduzca 10 números y se los mostraré por pantalla (pulse INTRO para continuar): ");
     System.console().readLine();
     
-    int[] numero = new int[20];
-    int[] cuadrado = new int[20];
-    int[] cubo = new int[20];
-    
+    int[] numero = new int[10];
+    int maximo = Integer.MIN_VALUE;
+    int minimo = Integer.MAX_VALUE;
     System.out.println();
     
-    for (int i = 0; i < 20; i++) {
-      
-      numero[i] = (int)(Math.random()* 100);
-      cuadrado[i] = numero[i] * numero[i];
-      cubo[i] = numero[i] * numero[i] * numero[i];
-      
-      System.out.printf("%3d %9d²= %1d %9d³= %1d\n", numero[i], numero[i], cuadrado[i], numero[i], cubo[i]);
-      System.out.println("-------------------------------------");
+    for (int i = 0; i < 10; i++) {
+      System.out.print("Inserte número: ");
+      numero[i] = Integer.parseInt(System.console().readLine());
+    
+        if (numero[i] < minimo) {
+          minimo = numero[i];
+        } else if (numero[i] > maximo) {
+          maximo = numero[i];
+        }
     }
+    
+    System.out.println("Numero mínimo introducido: " + minimo);
+    System.out.println("Numero maximo introducido: " + maximo);
+    
+
   }
 }
