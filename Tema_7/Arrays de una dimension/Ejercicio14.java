@@ -7,7 +7,7 @@
 *
 * @author Jesus Martin Castro
 */
-public class Ejercicio13 {
+public class Ejercicio14 {
   public static void main(String[] args){
     
     int[] numero = new int[100];
@@ -43,8 +43,9 @@ public class Ejercicio13 {
           System.out.print(blanco + " " + numero[i]);
         }
       }
-    } else {
-        
+    }
+    
+    if (numeroDestacar == 2) {
       for (i = 0; i < 100; i++) {
         if (numero[i] == numMax) {
           System.out.print(rojo + " **" + numMax + "**");
