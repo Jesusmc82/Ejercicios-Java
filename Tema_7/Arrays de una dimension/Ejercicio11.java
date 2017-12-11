@@ -15,8 +15,9 @@ public class Ejercicio11 {
     int[] numeroPrimo = new int[10];
     int[] numeroNoPrimo = new int[10];
     boolean esPrimo = true;
+    int i;
     
-    for (int i = 0; i < 10; i++) {
+    for (i = 0; i < 10; i++) {
       System.out.print("Inserte número: ");
       numero[i] = Integer.parseInt(System.console().readLine());
       esPrimo = true;
@@ -32,14 +33,21 @@ public class Ejercicio11 {
       }
     }
     
-    for (int i = 0; i < 10; i++) {
+    System.out.println();
+    System.out.println("Array original: ");
+    
+    
+    for ( i = 0; i < 10; i++) {
+      System.out.print(i);
       System.out.print(" " + numero[i]);
     }
     
     System.out.println();
     System.out.println("Array organizado con los primos en primer lugar: ");
+    System.out.println(i);
     
     for (int n:numeroPrimo) {
+      System.out.print(i);
       if (n!=0) {
         System.out.print(" " + n);
       }
