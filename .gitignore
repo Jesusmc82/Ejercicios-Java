@@ -3,3 +3,8 @@
 #copias de seguridad
 *.zip
 *.rar
+/Tema_10/JavaApplication15/nbproject/private/
+/Tema_10/Ejercicio1/nbproject/private/
+/Tema_10/Ejercicio1/build/
+/Tema_10/Ejercicio2/nbproject/private/
+/Tema_10/Ejercicio2/build/
