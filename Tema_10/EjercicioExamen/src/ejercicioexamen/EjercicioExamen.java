@@ -31,17 +31,17 @@ public class EjercicioExamen {
         for (Map.Entry pareja : plantaPropiedades.entrySet()) {
             plantaMinuscula.put((pareja.getKey().toString().toLowerCase()), pareja.getKey().toString());
         }
-        
+
         int contador = 1;
 
         for (Map.Entry pareja : plantaCientifica.entrySet()) {
-            
+
             if (contador < plantaCientifica.size()) {
                 System.out.print(pareja.getKey() + ", ");
             } else {
                 System.out.print(pareja.getKey());
             }
-            
+
             contador++;
         }
 
