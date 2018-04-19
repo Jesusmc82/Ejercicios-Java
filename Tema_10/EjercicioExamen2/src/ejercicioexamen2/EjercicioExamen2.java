@@ -15,7 +15,7 @@ public class EjercicioExamen2 {
         Scanner s = new Scanner(System.in);
         HashMap<String, String> colorEspanol = new HashMap<>();
         HashMap<String, String> colorRgb = new HashMap<>();
-        HashMap<String, String> colorIngles = new HashMap<>();
+        HashMap<String, String> colorCompleto = new HashMap<>();
         String colores;
 
         colorEspanol.put("Azul", "Blue");
@@ -39,7 +39,7 @@ public class EjercicioExamen2 {
         colorRgb.put("Rosa", "#EE82EE");
 
         for (Map.Entry pareja : colorEspanol.entrySet()) {
-            colorIngles.put((pareja.getKey().toString().toLowerCase()), pareja.getKey().toString());
+            colorCompleto.put((pareja.getKey().toString().toLowerCase()), pareja.getKey().toString());
         }
 
         int contador = 1;
@@ -60,8 +60,8 @@ public class EjercicioExamen2 {
         colores = s.nextLine().toLowerCase();
         System.out.println();
 
-        if (colorIngles.containsKey(colores)) {
-            System.out.println("El color " + colorIngles.get(colores) + ", en inglés es " + colorEspanol.get(colorIngles.get(colores)) + ", " + "y su codigo RGB es " +  colorRgb.get(colorIngles.get(colores)));
+        if (colorCompleto.containsKey(colores)) {
+            System.out.println("El color " + colorCompleto.get(colores) + ", en inglés es " + colorEspanol.get(colorCompleto.get(colores)) + ", " + "y su codigo RGB es " +  colorRgb.get(colorCompleto.get(colores)));
         } else {
             System.out.println("Lo siento, ese color no existe");
         }
