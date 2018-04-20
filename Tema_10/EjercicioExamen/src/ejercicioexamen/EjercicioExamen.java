@@ -48,7 +48,6 @@ public class EjercicioExamen {
         System.out.println();
         System.out.print("Por favor, introduzca el nombre de una planta: ");
         plantaReferencia = s.nextLine().toLowerCase();
-        System.out.println();
 
         if (plantaMinuscula.containsKey(plantaReferencia)) {
             System.out.println("Nombre común: " + plantaMinuscula.get(plantaReferencia));

@@ -58,8 +58,7 @@ public class EjercicioExamen2 {
         System.out.println();
         System.out.print("Por favor, introduzca un color: ");
         colores = s.nextLine().toLowerCase();
-        System.out.println();
-
+        
         if (colorCompleto.containsKey(colores)) {
             System.out.println("El color " + colorCompleto.get(colores) + ", en inglés es " + colorEspanol.get(colorCompleto.get(colores)) + ", " + "y su codigo RGB es " +  colorRgb.get(colorCompleto.get(colores)));
         } else {
