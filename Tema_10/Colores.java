@@ -1,4 +1,4 @@
-package ejercicioexamen2;
+package colores;
 
 /**
  * Prueba Ejercicio del Examen de Programación 2015 2016 t3c1_a ejercicio 1
@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class EjercicioExamen2 {
+public class Colores {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);

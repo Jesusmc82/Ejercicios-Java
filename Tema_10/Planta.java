@@ -1,4 +1,4 @@
-package ejercicioexamen;
+package planta;
 
 /**
  * Prueba Ejercicio del Examen de Programación 2015 2016 t3c1_b ejercicio 4
@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class EjercicioExamen {
+public class planta {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
